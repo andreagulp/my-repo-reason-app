@@ -15,25 +15,35 @@ let make = () => {
           <div className="col-sm-8 col-md-7 py-4">
             <h4 className="text-white"> {"About" |> string} </h4>
             <p className="text-muted">
-              {"Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information."
-               |> string}
+              {"andreagulp github portfolio" |> string}
             </p>
           </div>
           <div className="col-sm-4 offset-md-1 py-4">
             <h4 className="text-white"> {"Contact" |> string} </h4>
             <ul className="list-unstyled">
               <li>
-                <a href="#" className="text-white">
-                  {"Follow on Twitter" |> string}
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/andreariccetti/"
+                  className="text-white">
+                  {"Linkedin" |> string}
                 </a>
               </li>
               <li>
-                <a href="#" className="text-white">
-                  {"Like on Facebook" |> string}
+                <a
+                  href="https://github.com/andreagulp"
+                  className="text-white"
+                  target="_blank">
+                  {"GitHub" |> string}
                 </a>
               </li>
               <li>
-                <a href="#" className="text-white"> {"Email me" |> string} </a>
+                <a
+                  href="mailto:andreacommunication@gmail.com"
+                  target="_blank"
+                  className="text-white">
+                  {"Email me" |> string}
+                </a>
               </li>
             </ul>
           </div>
@@ -61,7 +71,7 @@ let make = () => {
             />
             <circle cx="12" cy="13" r="4" />
           </svg>
-          <strong> {"Album" |> string} </strong>
+          <strong> {"My Repos" |> string} </strong>
         </a>
         <button
           className="navbar-toggler"

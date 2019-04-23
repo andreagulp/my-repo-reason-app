@@ -28,7 +28,7 @@ function Header(Props) {
                                   className: "text-white"
                                 }, "About"), React.createElement("p", {
                                   className: "text-muted"
-                                }, "Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.")), React.createElement("div", {
+                                }, "andreagulp github portfolio")), React.createElement("div", {
                               className: "col-sm-4 offset-md-1 py-4"
                             }, React.createElement("h4", {
                                   className: "text-white"
@@ -36,13 +36,16 @@ function Header(Props) {
                                   className: "list-unstyled"
                                 }, React.createElement("li", undefined, React.createElement("a", {
                                           className: "text-white",
-                                          href: "#"
-                                        }, "Follow on Twitter")), React.createElement("li", undefined, React.createElement("a", {
+                                          href: "https://www.linkedin.com/in/andreariccetti/",
+                                          target: "_blank"
+                                        }, "Linkedin")), React.createElement("li", undefined, React.createElement("a", {
                                           className: "text-white",
-                                          href: "#"
-                                        }, "Like on Facebook")), React.createElement("li", undefined, React.createElement("a", {
+                                          href: "https://github.com/andreagulp",
+                                          target: "_blank"
+                                        }, "GitHub")), React.createElement("li", undefined, React.createElement("a", {
                                           className: "text-white",
-                                          href: "#"
+                                          href: "mailto:andreacommunication@gmail.com",
+                                          target: "_blank"
                                         }, "Email me"))))))), React.createElement("div", {
                   className: "navbar navbar-dark bg-dark shadow-sm"
                 }, React.createElement("div", {
@@ -69,7 +72,7 @@ function Header(Props) {
                                   cx: "12",
                                   cy: "13",
                                   r: "4"
-                                })), React.createElement("strong", undefined, "Album")), React.createElement("button", {
+                                })), React.createElement("strong", undefined, "My Repos")), React.createElement("button", {
                           "aria-label": "Toggle navigation",
                           "aria-expanded": false,
                           "aria-controls": "navbarHeader",
