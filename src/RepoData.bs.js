@@ -11,7 +11,9 @@ function parseRepo(json) {
   return /* record */[
           /* id */Json_decode.field("id", Json_decode.$$int, json),
           /* name */Json_decode.field("name", Json_decode.string, json),
-          /* description */Json_decode.field("description", Json_decode.string, json),
+          /* description */Json_decode.field("description", (function (param) {
+                  return Json_decode.optional(Json_decode.string, param);
+                }), json),
           /* stargazers_count */Json_decode.field("stargazers_count", Json_decode.$$int, json),
           /* html_url */Json_decode.field("html_url", Json_decode.string, json),
           /* user */Json_decode.field("owner", parseGithubOwner, json)

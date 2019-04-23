@@ -2,13 +2,19 @@ let string = React.string;
 
 [@react.component]
 let make = (~repo: RepoData.repo) => {
+  let repoDescription =
+    switch (repo.description) {
+    | Some(description) => description
+    | None => "no description yet"
+    };
+
   <div className="col-md-4">
     <div className="card mb-4 shadow-sm">
       //image
 
         <div className="card-body">
           <h5 className="card-title"> {repo.name |> string} </h5>
-          <p className="card-text"> {repo.description |> string} </p>
+          <p className="card-text"> {repoDescription |> string} </p>
           <div className="d-flex justify-content-between align-items-center">
             <div className="btn-group">
               <button

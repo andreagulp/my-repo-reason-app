@@ -3,7 +3,7 @@ type owner = string;
 type repo = {
   id: int,
   name: string,
-  description: string,
+  description: option(string),
   stargazers_count: int,
   html_url: string,
   user: owner,
@@ -15,7 +15,7 @@ let parseRepo = json =>
   Json.Decode.{
     id: json |> field("id", int),
     name: json |> field("name", string),
-    description: json |> field("description", string),
+    description: json |> field("description", optional(string)),
     stargazers_count: json |> field("stargazers_count", int),
     html_url: json |> field("html_url", string),
     user: json |> field("owner", parseGithubOwner),

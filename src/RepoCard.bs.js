@@ -9,6 +9,8 @@ function string(prim) {
 
 function RepoCard(Props) {
   var repo = Props.repo;
+  var match = repo[/* description */2];
+  var repoDescription = match !== undefined ? match : "no description yet";
   return React.createElement("div", {
               className: "col-md-4"
             }, React.createElement("div", {
@@ -19,7 +21,7 @@ function RepoCard(Props) {
                           className: "card-title"
                         }, repo[/* name */1]), React.createElement("p", {
                           className: "card-text"
-                        }, repo[/* description */2]), React.createElement("div", {
+                        }, repoDescription), React.createElement("div", {
                           className: "d-flex justify-content-between align-items-center"
                         }, React.createElement("div", {
                               className: "btn-group"
