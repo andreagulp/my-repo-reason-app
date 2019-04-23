@@ -20,7 +20,7 @@ function RepoCard(Props) {
                     }, React.createElement("h5", {
                           className: "card-title"
                         }, repo[/* name */1]), React.createElement("p", {
-                          className: "card-text"
+                          className: "card-text text-truncate"
                         }, repoDescription), React.createElement("div", {
                           className: "d-flex justify-content-between align-items-center"
                         }, React.createElement("div", {
